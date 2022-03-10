@@ -9,6 +9,17 @@ app.get("/", function(req, res){
 
     https.get(url, function(response){
         console.log(response.statusCode); 
+
+        response.on("data", function(data){
+            const weatherData = JSON.parse(data);
+            console.log(weatherData);
+
+            const object = {
+                name: "Ajith",
+                color: "red"
+            }
+            console.log(JSON.stringify(object));
+        });
     });
     res.send("Server is running");
 });
