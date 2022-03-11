@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ajith-02/API#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
     "express": "^4.17.3"
   }
 }
